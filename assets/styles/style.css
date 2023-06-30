@@ -1,0 +1,94 @@
+/* Main Style */
+
+body {
+    background: url("../images/bg.jpg") repeat 0 0;
+    font-family: cursive;
+}
+
+.container {
+    background: rgba(25, 121, 255, 0.58);
+    position: relative;
+    width: 100%;
+    margin: 150px auto;
+}
+
+.drop-downs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+label {
+    margin-right: 3px;
+    padding: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid #fff;
+    margin: 10px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.box:hover {
+    transform: scale(0.8);
+}
+
+.box1 {
+    padding: 70px;
+    flex-basis: 70px;
+    background-color: #6effe7;
+}
+
+.box2 {
+    padding: 50px;
+    flex-basis: 250px;
+    background-color: #ffef72;
+}
+
+.box3 {
+    padding: 100px;
+    flex-basis: 100px;
+    background-color: #ff76aa;
+}
+
+.box4 {
+    padding: 30px;
+    flex-basis: 200px;
+    background-color: #4dff61;
+}
+
+/* Clearing Style */
+
+.container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) and (max-width: 1357px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    .container {
+        width: 75%;
+    }
+}

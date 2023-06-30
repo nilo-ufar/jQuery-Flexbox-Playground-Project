@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery - Flexbox Playground Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Custom CSS File -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/normalize.css" />
+</head>
+
+<body>
+<div class="container">
+    <div class="drop-downs">
+        <label for="flex-direction">Flex Direction:</label>
+        <select id="flex-direction">
+            <option value="row">Row</option>
+            <option value="row-reverse">Row Reverse</option>
+            <option value="column">Column</option>
+            <option value="column-reverse">Column Reverse</option>
+        </select>
+
+        <label for="justify-content">Justify Content:</label>
+        <select id="justify-content">
+            <option value="center">Center</option>
+            <option value="flex-start">Start</option>
+            <option value="flex-end">End</option>
+            <option value="space-between">Space Between</option>
+            <option value="space-around">Space Around</option>
+        </select>
+
+        <label for="align-items">Align Items:</label>
+        <select id="align-items">
+            <option value="center">Center</option>
+            <option value="flex-start">Start</option>
+            <option value="stretch">Stretch</option>
+            <option value="flex-end">End</option>
+            <option value="baseline">Baseline</option>
+        </select>
+
+        <label for="flex-wrap">Flex Wrap:</label>
+        <select id="flex-wrap">
+            <option value="wrap">Wrap</option>
+            <option value="nowrap">No Wrap</option>
+            <option value="wrap-reverse">Wrap Reverse</option>
+        </select>
+    </div>
+
+    <div class="boxes">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</div>
+
+<!-- Main jQuery File -->
+<script src="assets/js/jQuery.js"></script>
+
+<!-- Main JS File -->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
